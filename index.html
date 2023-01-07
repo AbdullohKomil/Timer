@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"
+    />
+    <style>
+      .js-input:focus{
+        outline: none;
+      }
+    </style>
+  </head>
+  <body class="bg-primary" >
+    <div class="container d-flex align-items-center justify-content-center vh-100">
+      <form class="js-form bg-white w-50 rounded mx-auto ">
+        <div class="input-group p-5 d-flex justify-content-center">
+          <input
+          required
+          type="number"
+          class="border-0 border-bottom bg-white js-input" placeholder="Enter boiling timer"
+          />
+          <button
+          class="btn btn-secondary"
+          type="submit"
+          >
+          Start boiling
+        </button>
+      </div>
+        <ul class="js-list d-flex flex-wrap w-75 mx-auto " >
+          
+        </ul>
+      </form>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
