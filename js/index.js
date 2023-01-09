@@ -5,6 +5,8 @@ let elList = document.querySelector('.js-list');
 elForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
 
+
+
   let elItem = document.createElement('li');
   let elText = document.createElement("p")
   elItem.appendChild(elText)
@@ -27,8 +29,9 @@ elForm.addEventListener('submit', (evt) => {
   
   setTimeout(() => {
     clearInterval(timeInterval)
-    elItem.innerHTML = ''
+    elList.removeChild(elItem)
   }, time * 1000);
+  
   
 
   elInput.value = '';
